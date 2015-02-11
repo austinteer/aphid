@@ -1,0 +1,41 @@
+//Base that aren't going to be changing much.
+
+%full-bg{
+  background: url(../images/body-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/* 
+* Large-wrap class
+*/
+
+.large-wrap{
+	max-width: $wrapper-max-width;
+	padding: $wrapper-padding;
+	
+	@if $wrapper-center == true{
+		margin: 0 auto;
+	}
+}

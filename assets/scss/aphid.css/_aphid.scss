@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    Aphid.CSS
+\*------------------------------------*/
+
+@import "config";
+@import "base-styles";
+@import "utilities";
+@import "sticky-footer";
+@import "main"; // Base project styles. You typically aren't going to be added anything here.
+@import "header";
+@import "main-nav";
+@import "wordpress";
+@import "sidebar";
+// @import "flexslider"; //Uncomment this out if you'd like to use flexslider
+@import "buttons";
+@import "footer";

@@ -1,0 +1,129 @@
+.mobile-nav--toggle{
+	
+	@include media-query(desk){
+		display: none;
+	}
+
+	display: block;
+	margin: $base-half-spacing;
+	padding: $base-half-spacing;
+	border: 1px solid $brand-color-1;
+	background-color: transparent;
+	border-radius: 4px;
+
+	span{
+		display: block;
+		background-color: $brand-color-1;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		margin-top: 4px;
+
+		&:last-child{
+			margin-bottom: 2px;
+		}
+	}
+
+	&:hover, :active{
+		background-color: $brand-color-1;
+		border-radius: 4px;
+
+		span{
+			background-color: $white;
+		}
+	}
+}
+
+//Hides menu under 1024px
+.main-nav--toggle{
+	@include media-query(portable){
+		display: none;
+	}
+
+	display: block;
+}
+
+
+.main-nav{
+	position: absolute;
+	z-index: 9999;
+	
+	.current-menu-item{
+		a{
+			color: $brand-color-1;
+		}
+	}	
+
+	li{
+		display: block;
+		padding: $base-quarter-spacing;
+	}
+
+	a{
+		text-decoration: none;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 200;
+
+		&:hover{
+			color: $brand-color-1;
+		}
+	}
+
+
+	//Start of desktop query
+	@include media-query(desk){
+		position: relative;
+		list-style: none;
+		padding: 0 0 0 $base-spacing;
+
+	> li{
+		padding: 0 $base-spacing;
+		display: inline-block;	
+		
+		// &:first-child{
+		// 	padding-left: 0; 
+		// } 
+
+		&:hover > .sub-menu {
+    	display: block !important; 
+		}
+
+		> a{
+			line-height: 200px; // this is the height of your nav. 
+		}
+	}
+
+} // end desktop query
+
+.sub-menu {
+	margin-left: 0;
+
+	@include media-query(desk){
+   display: none;
+   position: absolute;
+   top: 60%;
+   list-style: none;
+   z-index: 999;
+   background-color: #ddd;
+   margin-left: 0; 
+   min-width: 150px;
+   text-decoration: none;
+   padding: 0 20px;
+   
+   a:hover {
+   	text-decoration: underline; 
+	}
+}
+}
+
+}
+
+.down-arrow{
+    position: relative;
+}
+ 
+.down-arrow:after{
+  content: "";
+  position: absolute;
+}

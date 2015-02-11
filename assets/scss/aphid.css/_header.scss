@@ -1,0 +1,12 @@
+.header{
+	
+}
+
+.site-logo{
+	@extend .ir;
+
+	background: url(../images/site-logo.png) no-repeat;
+	float: left;
+	width: 200px;
+	height: 200px;
+}

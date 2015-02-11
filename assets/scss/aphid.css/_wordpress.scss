@@ -1,0 +1,17 @@
+/*
+ * Wordpress Image Alignment
+ */
+.alignleft{
+  float: left;
+  margin-right: $base-spacing;
+}
+
+.aligncenter{
+  display: block;
+  margin: 0 auto;
+}
+
+.alignright{
+  float: right;
+  margin-left: $base-spacing;
+}

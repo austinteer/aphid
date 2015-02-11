@@ -1,0 +1,58 @@
+/*****************************\
+	Settings
+	Global variables, site-wide settings, config switches, etc.
+\*****************************/
+	@import "../bower_components/inuit-defaults/settings.defaults";
+	@import "../bower_components/inuit-responsive-settings/settings.responsive";
+
+
+/*****************************\
+	Tools: 
+	Site-wide mixins and functions.
+\*****************************/
+	@import "../bower_components/inuit-functions/tools.functions";
+	@import "../bower_components/inuit-mixins/tools.mixins";
+	@import "../bower_components/inuit-responsive-tools/tools.responsive";
+
+
+/*****************************\
+	Generic: 
+	Low-specificity, far-reaching rulesets (e.g. resets).
+\*****************************/
+	@import "../bower_components/inuit-normalize/generic.normalize";
+
+
+/*****************************\
+	Base:
+	Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+\*****************************/
+	@import "../bower_components/inuit-page/base.page";
+
+
+/*****************************\
+	Objects: 
+	Objects, abstractions, and design patterns (e.g. .media {}).
+\*****************************/
+	@import "../bower_components/inuit-layout/objects.layout";
+	@import "../bower_components/inuit-flag/objects.flag";
+
+
+/*****************************\
+	Components: 
+	Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+\*****************************/
+
+
+/*****************************\
+	Trumps: 
+	High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+\*****************************/
+	@import "../bower_components/inuit-widths/_trumps.widths.scss";
+	@import "../bower_components/inuit-widths-responsive/trumps.widths-responsive";
+
+
+/*****************************\
+	SASS Imports
+\*****************************/
+
+@import "aphid.css/aphid";

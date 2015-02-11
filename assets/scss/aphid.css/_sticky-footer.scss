@@ -1,0 +1,18 @@
+// Great sticky footer. http://css-tricks.com/snippets/css/sticky-footer/ 
+// Works for IE8+ 
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: em($footer-minus-height); 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: em($footer-height); 
+}
