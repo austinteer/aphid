@@ -117,6 +117,10 @@ gulp.task('watch', ['sync'], function() {
     $.watch('assets/js/**/*.js', function() {
         gulp.start('scripts');
     });
+    
+    $.watch('*.php', function(){
+      reload({stream:true});
+    });
 
 });
 
