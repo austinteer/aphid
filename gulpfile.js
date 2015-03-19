@@ -101,12 +101,8 @@ gulp.task('images', function() {
 
 gulp.task('sync', function() {
     browserSync({
-        proxy: {
-            host: 'Mamp Host Name'
-            //browser: ["google chrome", "firefox"]
-        }
+        proxy: "Mamp Host Name"
     });
-    //gulp.watch('*.php', ['styles', browserSync.reload ]);
 });
 
 gulp.task('watch', ['sync'], function() {
