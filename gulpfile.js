@@ -85,6 +85,13 @@ gulp.task('scripts', ['bower-scripts'], function() {
         }));
 });
 
+
+gulp.task('php', function(){
+    .pipe(reload({
+        stream: true
+    }));
+});
+
 // Images
 gulp.task('images', function() {
     return gulp.src([src.img])
@@ -113,10 +120,9 @@ gulp.task('watch', ['sync'], function() {
     $.watch('assets/js/**/*.js', function() {
         gulp.start('scripts');
     });
-    
-    $.watch('*.php', function(){
-      reload({stream:true});
-    });
+
+    $.watch("*.php").on("change", browserSync.reload);
+
 
 });
 
