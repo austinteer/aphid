@@ -5,7 +5,7 @@
     "author": "Austin Teer",
     "dependencies": {},
     "devDependencies": {
-`       "gulp": "^3.8.11",
+       "gulp": "^3.8.11",
         "gulp-load-plugins": "^0.5.1",
         "gulp-autoprefixer": "^0.0.7",
         "gulp-ruby-sass": "^0.7.0",
